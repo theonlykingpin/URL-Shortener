@@ -31,7 +31,7 @@ def index():
 
 
 @app.route("/<short_url>")
-def redirect_url(short_url):
+def redirect_url(short_url: str):
     long_url = shortened_urls.get(short_url)
     if long_url:
         return redirect(long_url)
