@@ -4,7 +4,7 @@ This is a simple project for beginner developers who wants to make some fun!
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install URL-Shortener.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements.
 
 ```bash
 pip install -r requirements.txt
