@@ -10,7 +10,7 @@ app = Flask(__name__)
 shortened_urls = {}
 
 
-def generate_short_url(length=6):
+def generate_short_url(length: int = 6):
     chars = string.ascii_letters + string.digits
     short_url = "".join(random.choice(chars) for _ in range(length))
     return short_url
@@ -23,7 +23,6 @@ def index():
         short_url = generate_short_url()
         while short_url in shortened_urls:
             short_url = generate_short_url()
-
         shortened_urls[short_url] = long_url
         with open("urls.json", "w") as f:
             json.dump(shortened_urls, f)
