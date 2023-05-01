@@ -1,2 +1,2 @@
 # URL-Shortener
-Simple URL-Shortener using flas
+Simple URL-Shortener using flask
